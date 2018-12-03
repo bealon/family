@@ -26,7 +26,7 @@ public class FamilyServiceTest {
 	@Rollback(false)
 	public void createFamily() throws BizException {
 		AddFamilyRequest request=new AddFamilyRequest();
-		request.setBirthland("湖南省常德市澧县码头铺镇");
+		request.setBirthland("湖南省常德市澧县");
 		request.setDesc("随便写写");
 		request.setName("快乐家族1");
 		P2FRelation p2FRelation=familyService.createFamily("7ebd75a8034d4224adb49ba93b40ad72", request);
